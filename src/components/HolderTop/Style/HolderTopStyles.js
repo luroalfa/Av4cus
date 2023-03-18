@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../styles/colors";
-import { fontSize, fontWeight } from "../../../styles/typography";
+import { colors, fontWeight, fontSize } from "../../../styles/theme";
 import { Link } from "react-router-dom";
 
 export const ContainerHolderTop = styled.div`

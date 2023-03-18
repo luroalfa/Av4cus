@@ -2,7 +2,12 @@ import React from "react";
 import Header from "../../components/Header/Header";
 
 const Home = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <h1>HOME</h1>
+    </>
+  );
 };
 
 export default Home;

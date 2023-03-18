@@ -1,3 +1,12 @@
+export const colors = {
+  dark_blue: "#00031F",
+  orange: "#FF9F1C",
+  dark_gray: "#242424",
+  gray: "#808080",
+  white: "#FFFFFF",
+  black: "#000000",
+};
+
 export const fontSize = {
   small: "16px",
   medium: "16px",
