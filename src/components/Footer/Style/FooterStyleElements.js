@@ -102,7 +102,7 @@ export const SocialIcon = styled.a`
 export const Copyright = styled.p`
   z-index: 1;
   font-size: ${fontSize.Small};
-  margin: 1em 0 1em 2em;
+  margin: 1em 0 1em 4em;
   ${mediaQueries.md} {
     font-size: ${fontSize.xSmall};
     text-align: center;

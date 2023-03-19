@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import { Helmet } from "react-helmet";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 const Home = () => {
   return (
@@ -24,6 +25,24 @@ const Home = () => {
 
       <Header />
       <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <ScrollToTop />
       <Footer />
     </>
   );
