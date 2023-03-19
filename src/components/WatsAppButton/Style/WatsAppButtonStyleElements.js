@@ -36,10 +36,9 @@ export const WhatsappButton = styled.a`
   &:hover {
     background: #20ba5a;
   }
-
-  @media only screen and (min-width: 320px) and (max-width: 768px) {
-    width: 55px;
-    height: 55px;
-    line-height: 66px;
+  ${mediaQueries.md}{
+      width: 55px;
+      height: 55px;
+      line-height: 66px;
   }
 `;

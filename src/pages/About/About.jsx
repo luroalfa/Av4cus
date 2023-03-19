@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+import WhatsAppButton from "../../components/WatsAppButton/WhatsAppButton";
 
 const About = () => {
   return (
@@ -23,6 +25,8 @@ const About = () => {
       </Helmet>
       <Header />
       <h1>ABOUT</h1>
+      <WhatsAppButton />
+      <ScrollToTop />
       <Footer />
     </>
   );

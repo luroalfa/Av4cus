@@ -23,7 +23,6 @@ const Home = () => {
         */}
         <link rel="canonical" href="https://www.av4cus.com" />
       </Helmet>
-
       <Header />
       <h1>Home</h1>
       <h1>Home</h1>

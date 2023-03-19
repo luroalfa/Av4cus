@@ -63,13 +63,25 @@ const Footer = () => {
         </FooterContent>
       </Content>
       <SocialIcons>
-        <SocialIcon href="https://www.facebook.com">
+        <SocialIcon
+          href="https://www.facebook.com"
+          aria-label="Ir a Facebook"
+          alt="Facebook"
+        >
           <FaFacebook />
         </SocialIcon>
-        <SocialIcon href="https://www.twitter.com">
+        <SocialIcon
+          href="https://www.twitter.com"
+          aria-label="Ir a Twitter"
+          alt="Twitter"
+        >
           <FaTwitter />
         </SocialIcon>
-        <SocialIcon href="https://www.instagram.com">
+        <SocialIcon
+          href="https://www.instagram.com"
+          aria-label="Ir a Instagram"
+          alt="Instagram"
+        >
           <FaInstagram />
         </SocialIcon>
       </SocialIcons>
