@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { colors, fontWeight, fontSize } from "../../../styles/theme";
+import  {mediaQueries} from "../../../styles/responsive"
 import { Link } from "react-router-dom";
+
 
 export const ContainerHolderTop = styled.div`
   display: flex;
@@ -10,13 +12,33 @@ export const ContainerHolderTop = styled.div`
   color: ${colors.white};
   height: 30px;
   padding: 5px;
+  ${mediaQueries.md} {
+    display: none;
+  }
 `;
 
 export const SubContainer = styled.div`
   display: flex;
-  align-items: center;  
+  align-items: center;
   & > svg {
     margin-right: 10px;
+  }
+  ${mediaQueries.lg} {
+    flex-direction: column;
+    & p{
+      text-align: center;
+      font-size: ${fontSize.extraSmall};
+    }
+    & > svg {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+    & span{
+      display: block;
+    }
+    & ul{
+      margin-top: 5px;
+    }
   }
 `;
 
@@ -37,11 +59,11 @@ export const Anchor = styled.a`
 export const LinkRouter = styled(Link)`
   color: ${colors.white};
   text-decoration: none;
+  display: inline-block;
   &:hover {
     color: ${colors.orange};
   }
 `;
-
 
 export const ListItem = styled.li`
   margin: 0 10px;
@@ -50,5 +72,8 @@ export const ListItem = styled.li`
   color: ${colors.white};
   & > svg {
     margin-right: 5px;
+  }
+  ${mediaQueries.lg}{
+    font-size: ${fontSize.extraSmall};
   }
 `;

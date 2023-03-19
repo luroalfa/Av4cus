@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { colors, fonts, fontWeight } from "../../../styles/theme";
+import { colors, fonts, fontWeight, fontSize } from "../../../styles/theme";
+import { mediaQueries } from "../../../styles/responsive";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export const NavbarContainer = styled.nav`
   display: flex;
@@ -8,23 +10,29 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   background-color: ${colors.white};
   height: 100px;
-  border: 1px solid blue;
 `;
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 64px;
+  font-size: ${fontSize.superBig};
   font-weight: ${fontWeight.medium};
   font-family: ${fonts.notoSans};
   color: ${colors.black};
   text-decoration: none;
   text-transform: uppercase;
+  ${mediaQueries.sm} {
+    font-size: ${fontSize.big};
+  }
 `;
 
 export const Logotype = styled.img`
   width: 64px;
   height: 64px;
+  ${mediaQueries.sm} {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const IconNav = styled.img`
@@ -38,6 +46,9 @@ export const Menu = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+  ${mediaQueries.md} {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.li`
@@ -50,7 +61,7 @@ export const LinkRouter = styled(Link)`
   font-size: 1.2rem;
   color: ${colors.dark_blue};
   text-decoration: none;
-  background-color: ${(props) => ((props.active) ? colors.orange : colors.white)};
+  background-color: ${(props) => (props.active ? colors.orange : colors.white)};
   border-radius: 10px;
   padding: 5px;
   transition: transform 0.5s ease-in-out;
@@ -71,5 +82,42 @@ export const LinkRouter = styled(Link)`
     &:after {
       ${(props) => (props.active ? "" : "width: 100%;")}
     }
+  }
+`;
+
+// Hamburger menu below
+export const HamburgerIcon = styled(FaBars)`
+  display: none;
+  color: ${colors.dark_blue};
+  font-size: 3rem;
+  cursor: pointer;
+  ${mediaQueries.md} {
+    display: block;
+  }
+`;
+
+export const CloseIcon = styled(FaTimes)`
+  display: none;
+  color: ${colors.dark_blue};
+  font-size: 3rem;
+  cursor: pointer;
+  ${mediaQueries.md} {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: none;
+  ${mediaQueries.md} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: ${colors.white};
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 `;

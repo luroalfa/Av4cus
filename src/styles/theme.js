@@ -8,9 +8,12 @@ export const colors = {
 };
 
 export const fontSize = {
+  extraSmall: "12px",
   small: "16px",
   medium: "16px",
   large: "20px",
+  big: "40px",
+  superBig: "64px"
 };
 
 export const fontWeight = {

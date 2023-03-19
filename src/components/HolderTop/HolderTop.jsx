@@ -32,9 +32,10 @@ const HolderTop = () => {
         ))}
       </UnorderedList>
       <SubContainer>
-        {timeIcon}
         <LinkRouter to="/Contact">
-          <p>Lunes-Viernes 07:00 AM - 05:00 PM</p>
+          <p>
+            {timeIcon}Lunes-Viernes <span>07:00 AM - 05:00 PM</span>
+          </p>
         </LinkRouter>
       </SubContainer>
       <SubContainer>
