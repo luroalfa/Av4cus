@@ -1,119 +1,114 @@
 import styled from "styled-components";
 import FooterImage from "../../../assets/images/footer.jpg";
+import { colors, fontSize, fontWeight } from "../../../styles/theme";
+import { mediaQueries } from "../../../styles/responsive";
 
-// export const FooterContainer = styled.footer`
-//   background-image: url(${FooterImage});
-//   background-size: cover;
-//   background-position: center;
-//   opacity: 0.8;
-//   padding: 40px 0;
-//   color: white;
-// `;
 export const FooterContainer = styled.footer`
-position: relative;
-background-image: url(${FooterImage});
-background-size: cover;
-background-position: center;
-padding: 40px 0;
-color: white;
-z-index: -1;
-&::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: black;
-  opacity: 0.8;
-}
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(${FooterImage});
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+
+  &::before {
+    background-color: ${colors.black};
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ${mediaQueries.md}{
+    padding: 40px 0;
+  }
 `;
 
-export const FooterWrapper = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+export const Content = styled.div`
   z-index: 1;
-  `;
-  
-  export const FooterContent = styled.div`
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  `;
-  
-  export const Logo = styled.img`
-  z-index: 1;
-  width: 5rem;
-  height: 5rem;
-  `;
-  
-  export const LogoWrapper = styled.div`
-  flex-basis: 20%;
-  margin-right: 50px;
-  `;
-  
-  export const LogoImg = styled.img`
-  height: 50px;
-  `;
-  
-  export const Column = styled.div`
-  z-index: 1;
-  flex: 1;
-  margin-right: 2rem;
-  `;
-  
-  export const ColumnWrapper = styled.div`
-  flex-basis: 20%;
-  margin-bottom: 20px;
-  
-  `;
-  
-  export const ColumnTitle = styled.h3`
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  `;
-  
-  export const ColumnList = styled.ul`
-  list-style: none;
-  padding: 0;
-  `;
-  
-  export const ColumnListItem = styled.li`
-  margin-bottom: 5px;
-  font-size: 14px;
-  `;
-  
-  export const SocialIconsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  `;
-  
-  export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
-  `;
-  
-  export const SocialIcon = styled.a`
-  color: white;
-  font-size: 20px;
-  margin-right: 20px;
-  transition: color 0.2s;
+  ${mediaQueries.md} {
+    flex-direction: column;
+  }
+`;
+
+export const FooterContent = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 5em;
+  ${mediaQueries.md} {
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0 0 0;
+  }
+`;
+
+export const Logo = styled.img`
   z-index: 1;
-  
+  width: 5rem;
+  height: 5rem;
+`;
+
+export const Column = styled.div`
+  z-index: 1;
+  margin: 2em;
+  ${mediaQueries.md} {
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+`;
+
+export const ColumnTitle = styled.h3`
+  font-size: ${fontSize.large};
+  font-weight: ${fontWeight.bold};
+`;
+
+export const ColumnList = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+
+export const ColumnListItem = styled.li`
+  margin: 2em 0;
+  font-size: ${fontSize.Small};
+  & span {
+    display: block;
+  }
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const SocialIcon = styled.a`
+  color: white;
+  font-size: 1.5em;
+  padding: 0 1em;
+  z-index: 1;
   &:hover {
-      color: #f2f2f2;
+    color: #f2f2f2;
+  }
+`;
+
+export const Copyright = styled.p`
+  z-index: 1;
+  font-size: ${fontSize.Small};
+  margin: 1em 0 1em 2em;
+  ${mediaQueries.md} {
+    font-size: ${fontSize.xSmall};
+    text-align: center;
+    margin: 2em 0 0 0;
+    & span {
+      display: block;
     }
-    `;
-    
-    export const Copyright = styled.p`
-    font-size: 14px;
-    margin-top: 30px;
+  }
 `;

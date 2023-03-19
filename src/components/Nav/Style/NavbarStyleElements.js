@@ -15,14 +15,14 @@ export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: ${fontSize.superBig};
+  font-size: ${fontSize.xxLarge};
   font-weight: ${fontWeight.medium};
   font-family: ${fonts.notoSans};
   color: ${colors.black};
   text-decoration: none;
   text-transform: uppercase;
   ${mediaQueries.sm} {
-    font-size: ${fontSize.big};
+    font-size: ${fontSize.xLarge};
   }
 `;
 

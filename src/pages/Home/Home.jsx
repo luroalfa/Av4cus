@@ -24,6 +24,16 @@ const Home = () => {
 
       <Header />
       <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
+      <h1>HOME</h1>
       <Footer />
     </>
   );

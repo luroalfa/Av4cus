@@ -27,7 +27,7 @@ export const SubContainer = styled.div`
     flex-direction: column;
     & p{
       text-align: center;
-      font-size: ${fontSize.extraSmall};
+      font-size: ${fontSize.xSmall};
     }
     & > svg {
       margin-right: 0;
@@ -74,6 +74,6 @@ export const ListItem = styled.li`
     margin-right: 5px;
   }
   ${mediaQueries.lg}{
-    font-size: ${fontSize.extraSmall};
+    font-size: ${fontSize.xSmall};
   }
 `;
