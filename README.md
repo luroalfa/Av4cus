@@ -22,10 +22,10 @@ This is the Av4cus project, a software company that offers SaaS business solutio
 ![Página de Inicio](./screenshots/SERVICIOS.png)
 
 ## Features
-Responsive Design
-Frequently Asked Questions (FAQs) section
-Detailed information about the services offered
-Contact section with a submission form
+* Responsive Design
+* Frequently Asked Questions (FAQs) section
+* Detailed information about the services offered
+* Contact section with a submission form
 
 ## Contribution
 If you wish to contribute to the project, you can do so through Pull Requests. Make sure to include a detailed description of the changes and tests performed.
