@@ -23,17 +23,7 @@ const Home = () => {
       </Helmet>
 
       <Header />
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
-      <h1>HOME</h1>
+      <h1>Home</h1>
       <Footer />
     </>
   );

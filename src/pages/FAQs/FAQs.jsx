@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
 
 const FAQs = () => {
@@ -22,6 +23,7 @@ const FAQs = () => {
       </Helmet>
       <Header />
       <h1>FAQS</h1>
+      <Footer />
     </>
   );
 };

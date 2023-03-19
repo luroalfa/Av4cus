@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
@@ -22,6 +23,7 @@ const Contact = () => {
       </Helmet>
       <Header />
       <h1>CONTACT</h1>
+      <Footer />
     </>
   );
 };
