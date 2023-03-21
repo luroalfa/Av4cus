@@ -61,12 +61,13 @@ const Navbar = () => {
         />
         Av4cus
       </LogoContainer>
-
+      {document.body.classList.toggle("no-scroll", menuOpen)}
       {menuOpen ? (
         <CloseIcon onClick={toggleMenu} />
       ) : (
         <HamburgerIcon onClick={toggleMenu} />
       )}
+
       {menuOpen && (
         <MobileMenu>
           <MobileMenuItem
