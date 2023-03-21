@@ -15,21 +15,21 @@ export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: ${fontSize.xxLarge};
+  font-size: ${fontSize.xxxLarge};
   font-weight: ${fontWeight.medium};
   font-family: ${fonts.notoSans};
   color: ${colors.black};
   text-decoration: none;
   text-transform: uppercase;
-  ${mediaQueries.sm} {
-    font-size: ${fontSize.xLarge};
+  ${mediaQueries.md} {
+    font-size: ${fontSize.xxLarge};
   }
 `;
 
 export const Logotype = styled.img`
   width: 64px;
   height: 64px;
-  ${mediaQueries.sm} {
+  ${mediaQueries.md} {
     width: 32px;
     height: 32px;
   }
@@ -89,7 +89,7 @@ export const LinkRouter = styled(Link)`
 export const HamburgerIcon = styled(FaBars)`
   display: none;
   color: ${colors.dark_blue};
-  font-size: 3rem;
+  font-size: 1em;
   cursor: pointer;
   ${mediaQueries.md} {
     display: block;
@@ -99,7 +99,7 @@ export const HamburgerIcon = styled(FaBars)`
 export const CloseIcon = styled(FaTimes)`
   display: none;
   color: ${colors.dark_blue};
-  font-size: 3rem;
+  font-size: 1em;
   cursor: pointer;
   ${mediaQueries.md} {
     display: block;
