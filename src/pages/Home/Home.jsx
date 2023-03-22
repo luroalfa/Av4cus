@@ -30,6 +30,7 @@ import CarouselImages from "../../components/CarouselImages/CarouselImages";
 const slides = [Claro, Telyman, Hermatix, LGB, Liberty];
 
 const Home = () => {
+  const UrlVdeo = "https://avacusvideofaqs.s3.amazonaws.com/V%C3%ADdeoFAQs.mp4";
   return (
     <>
       <Helmet>
@@ -85,6 +86,11 @@ const Home = () => {
           </Section2>
         </Container>
       </BgSection>
+      <Container>
+        <video src={UrlVdeo} controls autoPlay loop>
+          <source src={UrlVdeo} type="video/mp4" />
+        </video>
+      </Container>
       <WhatsAppButton />
       <ScrollToTop />
       <Footer />

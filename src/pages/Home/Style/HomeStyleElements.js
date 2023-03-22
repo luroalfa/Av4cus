@@ -43,10 +43,12 @@ export const Section2 = styled.section`
   color: ${colors.white};
 `;
 export const Subtitle = styled.h2`
-  font-size: 24px;
-  font-weight: bold;
+font-size: ${fontSize.Large};
+font-family: ${fonts.poppins};
+font-weight: ${fontWeight.regular};
   margin-bottom: 20px;
   text-align: center;
+  line-height: 33px;
 `;
 
 export const Text = styled.p`

@@ -45,9 +45,10 @@ export const CarouselButtonRight = styled(BsFillArrowRightCircleFill)`
   font-size: 36px;
   cursor: pointer;
   right: 25px;
-`;
-
-export const CarouselButtonLeft = styled(BsFillArrowLeftCircleFill)`
+  opacity: .09;
+  `;
+  
+  export const CarouselButtonLeft = styled(BsFillArrowLeftCircleFill)`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -56,4 +57,5 @@ export const CarouselButtonLeft = styled(BsFillArrowLeftCircleFill)`
   font-size: 36px;
   cursor: pointer;
   left: 25px;
+  opacity: .09;
 `;
