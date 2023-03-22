@@ -30,7 +30,8 @@ import CarouselImages from "../../components/CarouselImages/CarouselImages";
 const slides = [Claro, Telyman, Hermatix, LGB, Liberty];
 
 const Home = () => {
-  const UrlVdeo = "https://avacusvideofaqs.s3.amazonaws.com/V%C3%ADdeoFAQs.mp4";
+  const UrlVdeo =
+    "https://avacusvideofaqs.s3.us-east-1.amazonaws.com/V%C3%ADdeoFAQs.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEND%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDNzIpw3XLUQBqee8XU58KWb1HjmlxHnofvMypSuMgk4QIgC8IdeZpostyqnlF7MdvyQ%2FGrTAELwk5IapqaF0kWmm4q7QIImf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2MzMxMTU4NTM3OTQiDKu2XodPRVLavkALpyrBAkGQREdyp%2F6syCV9qrar04%2B26woSfp%2FAeCuKQY1p3uhHrhryCCjUYorw2%2B1b5hcyVcn0rqWy2A51miA8jCi%2BJdsOGIX6CyPUYkYyfVj7ehNEFelULpFdJc%2BmNv6i4uUCxF7TG8sZJLopY20CQwWyQDrz6EgEj6mxnVuE2hmWtoYMvQSgtqjd2sSbd7ba7AFglzDQyKnK9DVZ53VvSFhoxfA8XvP8kVBKyPy%2B8EjPBDpFT6CSVTZpX1Ye8YX4jvTe5Xd%2FHapNWaYXMj%2Fg7%2FymkycZ2XH%2B10YB3%2BiKRyGB5ZxFn2WG6o3DRmzlEam7hKNcBktXx9BA%2BtQrV%2FhuevCf2z66zLM7EihJ4raVIGOVwGwRmkl5LnFsCujzuXzYIKbnpcdbKealPbKgWF4wQQDwqkrjmX89vv%2B2u8ZOzsh9G6A5ojD3%2FOigBjqzArFCXDwbmZILHyXNnFrNooB%2FueD33AP%2BKoocP75nHpMh9%2BovccSJhLRTDt8FoejRXnGIIusW%2Fqe9IVZV76jQ2WqVBCwe5w9ziVN4j87CnB%2Flouf%2Fn09MyTr97xWvgFsfiXoLH%2FQCyhV8ofMTbhz6v9%2BL%2B16bXDagftzlpOfdchDpfBR3Y%2FpIeIQFtnS%2BpUDIJQENvZEhOKlaG2Zsnr%2BL3QM%2Fq64xmPpwjA1UbKpqvi9Pc0kMANNUJN%2Fm%2FWjKKzR8I09Zh2J2ONkgmdjdXBvv0qMFuCTtAVai6F82ee3RKIsmDdIFHv%2BSIpVlBE3%2BR%2BFUe9BAlnCFnyDK0S8aWxklbp1SRpk7NltWwCZQ1WD7b1DvPnTxfKqS38Ly4LPOA3h0La6U9QWnMOQ%2BIcNd6G6HhLwV60w%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230322T023144Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAZG2FFIPRGEKXN7DG%2F20230322%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7bd9effa53d6c6c9641afb160d3a77cfe52fa1ce60d32e504830b0398ee23937";
   return (
     <>
       <Helmet>
@@ -87,7 +88,7 @@ const Home = () => {
         </Container>
       </BgSection>
       <Container>
-        <video src={UrlVdeo} controls autoPlay loop>
+        <video src={UrlVdeo} controls autoPlay loop width={"100%"}>
           <source src={UrlVdeo} type="video/mp4" />
         </video>
       </Container>
