@@ -17,7 +17,11 @@ import {
   Paragraph,
   LinkRouter,
   BgSection,
-  Text,
+  Section3,
+  Section4,
+  BtnT,
+  BtnW,
+  ContainerBtns,
 } from "./Style/HomeStyleElements";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Claro from "../../assets/logos/claro.png";
@@ -26,6 +30,7 @@ import LGB from "../../assets/logos/LGB.jpg";
 import Liberty from "../../assets/logos/liberty.png";
 import Telyman from "../../assets/logos/telyman.png";
 import CarouselImages from "../../components/CarouselImages/CarouselImages";
+import { colors } from "../../styles/theme";
 
 const slides = [Claro, Telyman, Hermatix, LGB, Liberty];
 
@@ -54,13 +59,14 @@ const Home = () => {
         <Section1>
           <div>
             <MainTitle>¿Quiénes somos?</MainTitle>
-            <Paragraph>
+            <Paragraph align={"justify"}>
               En Av4cus estamos comprometidos en proporcionar soluciones SaaS
               innovadoras que resuelvan los desafíos empresariales. Descubre
               cómo podemos ayudarte a optimizar tus procesos y mejorar tus
               resultados. Visita nuestra página de Nosotros para obtener más
               información.
             </Paragraph>
+            <br />
             <div>
               <LinkRouter to={"/About"}>
                 Descubre quiénes somos
@@ -73,24 +79,59 @@ const Home = () => {
           </div>
         </Section1>
       </Container>
-      <BgSection>
+
+      <BgSection bgColor={colors.dark_gray}>
         <Container>
           <Section2>
             <Subtitle>
               Empresas de renombre confían en los servicios de Av4cus.
             </Subtitle>
-            <Text>
+            <Paragraph align={"center"}>
               Conozca algunas de las empresas que han confiado en nosotros.
-            </Text>
+            </Paragraph>
             <CarouselImages slides={slides} />
           </Section2>
         </Container>
       </BgSection>
+
       <Container>
-        <video src={UrlVdeo} controls autoPlay loop width={"100%"}>
-          <source src={UrlVdeo} type="video/mp4" />
-        </video>
+        <Section3>
+          <video src={UrlVdeo} controls loop width={"100%"}>
+            <source src={UrlVdeo} type="video/mp4" />
+          </video>
+          <div>
+            <Subtitle>¡Bienvenido al centro de ayuda de AV4CUS!</Subtitle>
+            <Paragraph align={"justify"}>
+              Hemos recopilado esta información a lo largo de los años para
+              ayudarte a resolver cualquier duda que puedas tener. En nuestra
+              sección de FAQs, encontrarás información valiosa sobre cómo
+              utilizar nuestros productos y cómo sacar el máximo provecho de
+              ellos. También encontrarás soluciones a problemas comunes y
+              consejos útiles para aprovechar al máximo tu experiencia con
+              AV4CUS.
+            </Paragraph>
+            <br />
+            <LinkRouter to={"/FAQs"}>
+              Ver las preguntas más frecuentes
+              <HiArrowNarrowRight />
+            </LinkRouter>
+          </div>
+        </Section3>
       </Container>
+
+      <BgSection bgColor={colors.dark_blue}>
+        <Container>
+          <Section4>
+            <Subtitle color={colors.white}>
+              Únete al cambio digital con AV4CUS.
+            </Subtitle>
+            <ContainerBtns>
+              <BtnT>HABLAR CON VENTAS</BtnT>
+              <BtnW>PRUEBA GRATIS</BtnW>
+            </ContainerBtns>
+          </Section4>
+        </Container>
+      </BgSection>
       <WhatsAppButton />
       <ScrollToTop />
       <Footer />

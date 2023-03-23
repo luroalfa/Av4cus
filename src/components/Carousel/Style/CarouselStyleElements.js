@@ -4,7 +4,6 @@ import {
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 import { fontSize } from "../../../styles/theme";
-
 export const Title = styled.p`
   font-size: ${fontSize.xxLarge};
 `;
