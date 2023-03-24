@@ -1,5 +1,7 @@
 const URLVideoBuscarOrden =
   "https://avacusvideofaqs.s3.amazonaws.com/buscarorden.mp4";
+const URLVideoEditarOrden =
+  "https://avacusvideofaqs.s3.amazonaws.com/editarOrden.mp4";
 
 const faqData = [
     {
@@ -25,6 +27,12 @@ const faqData = [
       question: "¿Como se puede buscar una orden?",
       answer: "Para facilitar el proceso de buscar una orden de pedido, hemos creado un video tutorial que muestra paso a paso cómo realizarlo. Al seguir las instrucciones del video, podrás buscar tu orden de manera rápida y sencilla. Además, el video te ayudará a visualizar mejor el proceso y responder a posibles dudas ¡No dudes en revisarlo para obtener más detalles!",
       video: URLVideoBuscarOrden,
+    },
+    {
+      id: 5,
+      question: "¿Como se puede editar una orden?",
+      answer: "Para facilitar el proceso de editar una orden de pedido, hemos creado un video tutorial que muestra paso a paso cómo realizarlo. Al seguir las instrucciones del video, podrás editar tu orden de manera rápida y sencilla. Además, el video te ayudará a visualizar mejor el proceso y responder a posibles dudas ¡No dudes en revisarlo para obtener más detalles!",
+      video: URLVideoEditarOrden,
     },
   ]; 
   
