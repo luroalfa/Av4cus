@@ -96,7 +96,7 @@ const Home = () => {
 
       <Container>
         <Section3>
-          <video src={UrlVdeo} controls loop width={"100%"}>
+          <video src={UrlVdeo} controls width={"100%"}>
             <source src={UrlVdeo} type="video/mp4" />
           </video>
           <div>
