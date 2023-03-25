@@ -8,7 +8,7 @@ export const StyledText = styled.p`
   font-size: ${fontSize.large};
   line-height: 33px;
   font-style: normal;
-  text-align: ${(props) => props.align}; 
+  text-align: justify;
   ${mediaQueries.md} {
     font-size: ${fontSize.medium};
   }
