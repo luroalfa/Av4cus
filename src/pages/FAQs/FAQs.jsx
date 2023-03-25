@@ -11,12 +11,14 @@ import {
   Slider,
   SliderContainer,
   Title,
+  Text,
+  Video,
+  QuestionIcon,
+  PanelStyle,
 } from "./Style/FAQsStyleElements";
 import Container from "../../components/Container/Container";
 import { Collapse } from "antd";
 import faqData from "../../store/faqData";
-
-const { Panel } = Collapse;
 
 const FAQs = () => {
   return (
@@ -31,16 +33,14 @@ const FAQs = () => {
           name="keywords"
           content="preguntas frecuentes, FAQs, ayuda, soporte técnico, servicios, productos, soluciones, clientes, asistencia, consultas, respuestas, Soluciones SaaS, Gestión de activos, Gestión de personal en terreno, Análisis de datos en tiempo real, Optimización de procesos, Transformación digital, Innovación tecnológica, Eficiencia empresarial, Automatización de procesos, ERP, Asistente Empresarial, Asistente Laboral, Synapse, Move0n, Avacus, Av4cus, Telecomunicaciones, reporteria, reporte fotográfico, inventario, formularios, formularios dinámicos, reporteria flexible"
         />
-        {/* TODO
-            Una vez comprado el dominio debo modificar este link
-        */}
-        <link rel="canonical" href="https://www.av4cus.com" />
       </Helmet>
       <Header />
       <SliderContainer>
         <Slider>
           <ContenedorTitle>
+            <QuestionIcon />
             <Title>PREGUNTAS MÁS FRECUENTES</Title>
+            <br />
             <p>
               En nuestra sección encontrarás respuestas a las preguntas más
               comunes acerca de nuestros servicios.
@@ -66,16 +66,16 @@ const FAQs = () => {
       <Container>
         <Collapse bordered={false}>
           {faqData.map((faq) => (
-            <Panel header={faq.question} key={faq.id}>
-              <p>{faq.answer}</p>
+            <PanelStyle header={faq.question} key={faq.id}>
+              <Text>{faq.answer}</Text>
               {faq.video && (
                 <>
-                  <video src={faq.video} controls width={"100%"}>
+                  <Video src={faq.video} controls>
                     <source src={faq.video} type="video/mp4" />
-                  </video>
+                  </Video>
                 </>
               )}
-            </Panel>
+            </PanelStyle>
           ))}
         </Collapse>
       </Container>
