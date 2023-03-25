@@ -1,36 +1,47 @@
+// Node.js libraries and modules
 import React from "react";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import { Helmet } from "react-helmet";
-import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import WhatsAppButton from "../../components/WatsAppButton/WhatsAppButton";
-import Carousel from "../../components/Carousel/Carousel";
-import { slidesHome } from "../../store/sliderDate";
-import Container from "../../components/Container/Container";
+
+// Images
 import BussinesCard from "../../assets/images/Home/BusinessCard.png";
-import {
-  ImageAboutUs,
-  Section1,
-  Section2,
-  Subtitle,
-  MainTitle,
-  Paragraph,
-  LinkRouter,
-  BgSection,
-  Section3,
-  Section4,
-  BtnT,
-  BtnW,
-  ContainerBtns,
-} from "./Style/HomeStyleElements";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Claro from "../../assets/logos/claro.png";
 import Hermatix from "../../assets/logos/hermatix_logo.svg";
 import LGB from "../../assets/logos/LGB.jpg";
 import Liberty from "../../assets/logos/liberty.png";
 import Telyman from "../../assets/logos/telyman.png";
+
+// Components
+import Container from "../../components/Container/Container";
+import Carousel from "../../components/Carousel/Carousel";
 import CarouselImages from "../../components/CarouselImages/CarouselImages";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+import WhatsAppButton from "../../components/WatsAppButton/WhatsAppButton";
+
+// Styles
 import { colors } from "../../styles/theme";
+import {
+  BgSection,
+  ImageAboutUs,
+  LinkRouter,
+  MainTitle,
+  Paragraph,
+  Section1,
+  Section2,
+  Section3,
+  Section4,
+  Subtitle,
+  BtnT,
+  BtnW,
+  ContainerBtns,
+} from "./Style/HomeStyleElements";
+
+// Icons
+import { HiArrowNarrowRight } from "react-icons/hi";
+
+// Storage
+import { slidesHome } from "../../store/sliderDate";
 
 const slides = [Claro, Telyman, Hermatix, LGB, Liberty];
 
@@ -38,6 +49,7 @@ const Home = () => {
   const UrlVdeo = "https://avacusvideofaqs.s3.amazonaws.com/videofaqs.mp4";
   return (
     <>
+      {/* The Helmet component sets the title and meta tags for the page */}
       <Helmet>
         <title>AV4CUS-Inicio</title>
         <meta
@@ -49,7 +61,9 @@ const Home = () => {
           content="Soluciones SaaS, Gestión de activos, Gestión de personal en terreno, Análisis de datos en tiempo real, Optimización de procesos, Transformación digital, Innovación tecnológica, Eficiencia empresarial, Automatización de procesos, ERP, Asistente Empresarial, Asistente Laboral, Synapse, Move0n, Avacus, Av4cus, Telecomunicaciones, reporteria, reporte fotográfico, inventario, formularios, formularios dinámicos, reporteria flexible"
         />
       </Helmet>
+      {/* The Header component contains the main navigation menu */}
       <Header />
+
       <Carousel slides={slidesHome} />
       <Container>
         <Section1>

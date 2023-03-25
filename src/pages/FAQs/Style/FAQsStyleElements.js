@@ -47,6 +47,19 @@ export const ContenedorTitle = styled.div`
     text-align: center;
     font-size: 1.2em;
   }
+  & h1{
+    ::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 68%;
+      height: 3px;
+      background-color: ${colors.orange};
+      box-shadow: 0px 4px 4px rgba(255, 159, 28, 0.5);
+    }
+  }
   ${mediaQueries.md} {
     right: 0;
     top: 50%;
@@ -64,23 +77,6 @@ export const Title = styled.h1`
   font-size: ${fontSize.xLarge};
   line-height: 54px;
   font-style: normal;
-
-  ::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 68%;
-    height: 3px;
-    background-color: ${colors.orange};
-    box-shadow: 0px 4px 4px rgba(255, 159, 28, 0.5);
-  }
-  ${mediaQueries.md}{
-    ::before {
-      width: 100%;
-    }    
-  }
 `;
 
 export const Text = styled.p`

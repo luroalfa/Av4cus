@@ -8,7 +8,7 @@ export const Title = styled.p`
   font-size: ${fontSize.xxLarge};
 `;
 
-export const CarouselContainer = styled.div`
+export const CarouselContainer = styled.figure`
   max-width: 1920px;
   margin: 0 auto;
   position: relative;

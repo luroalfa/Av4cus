@@ -1,9 +1,17 @@
+/* We apply a style reset for all elements on the webpage. */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* We apply these styles when the hamburger menu is active. */
 .no-scroll{
   overflow: hidden;
+}
+
+/* The following measures are established in case the user's screen is larger than 1920px, so that the content will not stretch or deform. */
+body{
+  max-width: 1920px;
+  margin: 0 auto;
 }

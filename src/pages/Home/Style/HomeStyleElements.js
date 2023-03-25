@@ -102,7 +102,7 @@ export const Section4 = styled.section`
   }
 `;
 
-export const BgSection = styled.div`
+export const BgSection = styled.aside`
   background-color: ${(props) => props.bgColor};
   padding: 25px 0;
 `;
