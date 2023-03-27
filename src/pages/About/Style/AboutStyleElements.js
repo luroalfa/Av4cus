@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BackgroundImage from "../../../assets/images/about/teamworking.jpg";
 import { mediaQueries } from "../../../styles/responsive";
 import { fonts, fontWeight, fontSize, colors } from "../../../styles/theme";
-
+import { BsPatchExclamation, GiSupersonicArrow, FaEye } from "react-icons/all";
 
 export const SliderContainer = styled.figure`
   max-width: 1920px;
@@ -18,10 +18,10 @@ export const Slider = styled.div`
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(${BackgroundImage});
-    background-size: cover;
-    background-position: center;
-    ${mediaQueries.md} {
-      background-position: right;
+  background-size: cover;
+  background-position: center;
+  ${mediaQueries.md} {
+    background-position: right;
   }
 `;
 
@@ -63,9 +63,23 @@ export const Title = styled.h1`
     background-color: ${colors.orange};
     box-shadow: 0px 4px 4px rgba(255, 159, 28, 0.5);
   }
-  ${mediaQueries.md}{
+  ${mediaQueries.md} {
     ::before {
       width: 100%;
-    }    
+    }
   }
+`;
+
+export const ExclamationIcon = styled(BsPatchExclamation)`
+  color: white;
+  font-size: 4em;
+`;
+
+export const ArrowIcon = styled(GiSupersonicArrow)`
+  color: black;
+  font-size: 4em;
+`;
+export const EyeIcon = styled(FaEye)`
+  color: black;
+  font-size: 4em;
 `;

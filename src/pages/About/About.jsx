@@ -12,6 +12,9 @@ import {
   SliderContainer,
   ContenedorTitle,
   Title,
+  ExclamationIcon,
+  ArrowIcon,
+  EyeIcon,
 } from "./Style/AboutStyleElements";
 import Container from "../../components/Container/Container";
 import Text from "../../components/Text/Text";
@@ -37,6 +40,7 @@ const About = () => {
       <SliderContainer>
         <Slider>
           <ContenedorTitle>
+            <ExclamationIcon />
             <Title>SOBRE NOSOTROS</Title>
             <br />
             <Text>
@@ -57,7 +61,8 @@ const About = () => {
           productividad.
         </Text>
       </Container>
-      <Container>
+      <Container center={"center"}>
+        <ArrowIcon />
         <Subtitle>NUESTRA MISIÓN</Subtitle>
         <Text>
           Es proporcionar soluciones SaaS de alta calidad que permitan a las
@@ -67,7 +72,8 @@ const About = () => {
           digital.
         </Text>
       </Container>
-      <Container>
+      <Container center={"center"}>
+        <EyeIcon />
         <Subtitle>NUESTRA VISIÓN</Subtitle>
         <Text>
           Es ser el proveedor lider en soluciones SaaS innovadoras que impulsen

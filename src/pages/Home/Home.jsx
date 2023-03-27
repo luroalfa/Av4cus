@@ -42,6 +42,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 // Storage
 import { slidesHome } from "../../store/sliderDate";
+import SplineDesign from "../../components/SplineDesign/SplineDesign";
 
 const slides = [Claro, Telyman, Hermatix, LGB, Liberty];
 
@@ -63,7 +64,6 @@ const Home = () => {
       </Helmet>
       {/* The Header component contains the main navigation menu */}
       <Header />
-
       <Carousel slides={slidesHome} />
       <Container>
         <Section1>

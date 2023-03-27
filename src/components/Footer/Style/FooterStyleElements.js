@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FooterImage from "../../../assets/images/footer.jpg";
+import FooterImage from "../../../assets/images/Footer/footer.jpg";
 import { colors, fontSize, fontWeight } from "../../../styles/theme";
 import { mediaQueries } from "../../../styles/responsive";
 

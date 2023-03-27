@@ -5,6 +5,7 @@ import {
   CarouselContainer,
   CarouselInformation,
   CarouselSlide,
+  CTA,
   Title,
 } from "./Style/CarouselStyleElements";
 
@@ -33,13 +34,15 @@ const Carousel = ({ slides }) => {
         <CarouselSlide
           key={index}
           backgroundImage={slide.image}
+          visible={currentIndex}
           style={{
-            display: index === currentIndex ? "block" : "none",
+            display: index === currentIndex ? "flex" : "none",
           }}
         >
           <CarouselInformation>
             <Title>{slide.title}</Title>
             <p>{slide.description}</p>
+            <CTA to={"/Services"}>Saber más</CTA>
           </CarouselInformation>
         </CarouselSlide>
       ))}

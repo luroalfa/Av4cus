@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mediaQueries } from "../../../styles/responsive";
-import { fonts, fontWeight, fontSize, colors } from "../../../styles/theme";
+import { fonts, fontWeight, fontSize } from "../../../styles/theme";
 
 export const StyledText = styled.p`
   font-family: ${fonts.notoSans};
