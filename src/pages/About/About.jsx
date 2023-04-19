@@ -13,12 +13,29 @@ import {
   ContenedorTitle,
   Title,
   ExclamationIcon,
-  ArrowIcon,
-  EyeIcon,
+  ImageIcon,
+  ContainerCards,
+  CardImage,
+  CardStyle,
 } from "./Style/AboutStyleElements";
 import Container from "../../components/Container/Container";
 import Text from "../../components/Text/Text";
 import Subtitle from "../../components/Subtitle/Subtitle";
+
+// Images
+import Mision from "../../assets/images/about/icons/mision.png";
+import Vision from "../../assets/images/about/icons/vision.png";
+import Strategy from "../../assets/images/about/icons/estrategia.png";
+import Investigation from "../../assets/images/about/investigacion.png";
+import Expasion from "../../assets/images/about/expasion.jpg";
+import Branding from "../../assets/images/about/branding.jpg";
+import Colaboracion from "../../assets/images/about/colaboracion.jpg";
+import Innovation from "../../assets/images/about/innovation.jpg";
+import Compromiso from "../../assets/images/about/compromiso.jpg";
+import Humildad from "../../assets/images/about/humildad.jpg";
+import Servicio from "../../assets/images/about/servicio.jpg";
+import { Card } from "antd";
+const { Meta } = Card;
 
 const About = () => {
   return (
@@ -53,27 +70,35 @@ const About = () => {
       <Container>
         <Text>
           En Av4cus, estamos comprometidos a impulsar la transformación digital
-          de las empresas al proporcionar soluciones SaaS innovadoras y de alta
-          calidad que les permitan optimizar sus procesos y mejorar sus
-          resultados.Con más de 5 años de experiencia en el mercado y un enfoque
-          centrado en el cliente, Av4cus se ha convertido en una opción
-          confiable para las empresas que buscan mejorar su eficiencia y
+          de las empresas ofreciendo innovadores servicios de software basados
+          en la nube y de alta calidad que les permitan optimizar sus procesos y
+          mejorar sus resultados. Con más de 5 años de experiencia en el mercado
+          y un enfoque centrado en el cliente, Av4cus se ha convertido en una
+          opción confiable para las empresas que buscan mejorar su eficiencia y
           productividad.
+          <br />
+          Continuamente nos esforzamos por establecer relaciones sólidas y
+          duraderas con nuestros clientes, y nos comprometemos a proporcionar un
+          soporte y asesoramiento continuo para garantizar que nuestras
+          soluciones sigan cumpliendo y superando sus expectativas. Con Av4cus
+          como su socio en la transformación digital, puede estar seguro de que
+          está tomando las medidas adecuadas para impulsar el éxito y el
+          crecimiento de su empresa en el mundo digitalizado de hoy.
         </Text>
       </Container>
       <Container center={"center"}>
-        <ArrowIcon />
+        <ImageIcon src={Mision} alt="Imagen sobre Mision" />
         <Subtitle>NUESTRA MISIÓN</Subtitle>
         <Text>
-          Es proporcionar soluciones SaaS de alta calidad que permitan a las
-          empresas optimizar sus procesos y mejorar sus resultados. La empresa
-          trabaja incansablemente para brindar un servicio excepcional y soporte
-          técnico a sus clientes, y ayudarlos a tener éxito en su transformación
-          digital.
+          Es proporcionar soluciones como servicios de alta calidad que permitan
+          a las empresas optimizar sus procesos y mejorar sus resultados. La
+          empresa trabaja incansablemente para brindar un servicio excepcional y
+          soporte técnico a sus clientes, y ayudarlos a tener éxito en su
+          transformación digital.
         </Text>
       </Container>
       <Container center={"center"}>
-        <EyeIcon />
+        <ImageIcon src={Vision} alt="Imagen sobre Vision" />
         <Subtitle>NUESTRA VISIÓN</Subtitle>
         <Text>
           Es ser el proveedor lider en soluciones SaaS innovadoras que impulsen
@@ -81,11 +106,12 @@ const About = () => {
           productividad.
         </Text>
       </Container>
-      <Container>
+      <Container center={"center"}>
+        <ImageIcon src={Strategy} alt="Imagen sobre estrategia" />
         <Subtitle>NUESTRA ESTRATEGIA</Subtitle>
         <Text>
-          En Av4cus, nos esforzamos por ofrecer soluciones SaaS innovadoras que
-          ayuden a las empresas a optimizar sus procesos y mejorar su
+          Nos dedicamos a proporcionar servicios de software basados en la nube
+          que ayuden a las empresas a optimizar sus procesos y mejorar su
           productividad. Para lograr esto, seguimos una estrategia centrada en
           la investigación y el desarrollo, la expansión geográfica, el
           fortalecimiento de la marca y la colaboración con otros proveedores.
@@ -94,6 +120,111 @@ const About = () => {
           misión de proporcionar a las empresas soluciones de alta calidad que
           les permitan transformarse digitalmente y mejorar sus resultados.
         </Text>
+        <ContainerCards>
+          <CardStyle
+            hoverable
+            cover={<CardImage alt="Investigacion" src={Investigation} />}
+          >
+            <Meta
+              title="Investigación y desarrollo"
+              description="Invertir en investigación y desarrollo para identificar y desarrollar soluciones SaaS innovadoras que resuelvan los desafíos y mejoren la eficiencia de las empresas."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={<CardImage alt="Expasion Geografica" src={Expasion} />}
+          >
+            <Meta
+              title="Expansión geográfica"
+              description="Expandirse a nuevos mercados internacionales para aumentar la base de clientes y mejorar la presencia de la marca en el mundo."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={
+              <CardImage alt="Fortalecimiento de la marca" src={Branding} />
+            }
+          >
+            <Meta
+              title="Fortalecimiento de la marca"
+              description="Expandirse a nuevos mercados internacionales para aumentar la base de clientes y mejorar la presencia de la marca en el mundo."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={
+              <CardImage
+                alt="Colaboración con otros proveedores"
+                src={Colaboracion}
+              />
+            }
+          >
+            <Meta
+              title="Colaboración con otros proveedores"
+              description="Expandirse a nuevos mercados internacionales para aumentar la base de clientes y mejorar la presencia de la marca en el mundo."
+            />
+          </CardStyle>
+        </ContainerCards>
+      </Container>
+      <Container center={"center"}>
+        <ImageIcon src={Strategy} alt="Imagen sobre estrategia" />
+        <Subtitle>VALORES</Subtitle>
+        <Text>
+          Nos esforzamos por ofrecer soluciones que ayuden a las empresas a
+          optimizar sus procesos y mejorar su productividad. Para lograr esto,
+          seguimos una estrategia centrada en la investigación y el desarrollo,
+          la expansión geográfica, el fortalecimiento de la marca y la
+          colaboración con otros proveedores. Estas iniciativas son clave para
+          lograr nuestra visión de ser el proveedor líder en soluciones SaaS
+          innovadoras y para cumplir nuestra misión de proporcionar a las
+          empresas soluciones de alta calidad que les permitan transformarse
+          digitalmente y mejorar sus resultados.
+        </Text>
+        <ContainerCards>
+          <CardStyle
+            hoverable
+            cover={<CardImage alt="Investigacion" src={Innovation} />}
+          >
+            <Meta
+              title="Innovación"
+              description="AV4CUS se compromete a ofrecer soluciones SaaS (Software As A Service) innovadoras que ayuden a las empresas a transformarse digitalmente y mejorar su eficiencia."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={<CardImage alt="Expasion Geografica" src={Compromiso} />}
+          >
+            <Meta
+              title="Compromiso"
+              description="En Av4cus, creemos en el compromiso con nuestros clientes. Nos esforzamos por comprender sus necesidades y brindar soluciones innovadoras y efectivas que les ayuden a lograr sus objetivos empresariales."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={
+              <CardImage alt="Fortalecimiento de la marca" src={Humildad} />
+            }
+          >
+            <Meta
+              title="Humildad"
+              description="La humildad es uno de los valores fundamentales de Av4cus. Reconocemos que siempre hay espacio para mejorar y que debemos aprender de nuestros errorres para seguir creciendo como empresas."
+            />
+          </CardStyle>
+          <CardStyle
+            hoverable
+            cover={
+              <CardImage
+                alt="Colaboración con otros proveedores"
+                src={Servicio}
+              />
+            }
+          >
+            <Meta
+              title="Excelencia al servicio"
+              description="Av4cus se esfuerza por brindar un servicio excepcional y soporte técnico a sus clientes para ayudarlos a alcanzar sus objetivos y tener éxito en su transformacion digital."
+            />
+          </CardStyle>
+        </ContainerCards>
       </Container>
 
       {/* This WhatsAppButton component display the WhatsApp button */}

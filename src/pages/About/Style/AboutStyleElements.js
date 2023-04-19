@@ -2,7 +2,8 @@ import styled from "styled-components";
 import BackgroundImage from "../../../assets/images/about/teamworking.jpg";
 import { mediaQueries } from "../../../styles/responsive";
 import { fonts, fontWeight, fontSize, colors } from "../../../styles/theme";
-import { BsPatchExclamation, GiSupersonicArrow, FaEye } from "react-icons/all";
+import { BsPatchExclamation } from "react-icons/bs";
+import { Card } from "antd";
 
 export const SliderContainer = styled.figure`
   max-width: 1920px;
@@ -16,7 +17,7 @@ export const Slider = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(${BackgroundImage});
   background-size: cover;
   background-position: center;
@@ -75,11 +76,25 @@ export const ExclamationIcon = styled(BsPatchExclamation)`
   font-size: 4em;
 `;
 
-export const ArrowIcon = styled(GiSupersonicArrow)`
-  color: black;
-  font-size: 4em;
+export const ImageIcon = styled.img`
+  width: 64px;
+  height: 64px;
 `;
-export const EyeIcon = styled(FaEye)`
-  color: black;
-  font-size: 4em;
+
+export const ContainerCards = styled.div`
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+`;
+
+export const CardImage = styled.img`
+  width: 100%;
+  height: 300px;
+  objectfit: cover;
+`;
+
+export const CardStyle = styled(Card)`
+  width: 320px;
 `;
