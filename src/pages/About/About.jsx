@@ -147,7 +147,7 @@ const About = () => {
           >
             <Meta
               title="Fortalecimiento de la marca"
-              description="Expandirse a nuevos mercados internacionales para aumentar la base de clientes y mejorar la presencia de la marca en el mundo."
+              description="Nuestra marca es nuestra identidad. Queremos asegurarnos de que nuestros clientes se identifiquen con nuestros valores y que confíen en la calidad de nuestros servicios."
             />
           </CardStyle>
           <CardStyle
@@ -161,7 +161,7 @@ const About = () => {
           >
             <Meta
               title="Colaboración con otros proveedores"
-              description="Expandirse a nuevos mercados internacionales para aumentar la base de clientes y mejorar la presencia de la marca en el mundo."
+              description="La colaboración es clave en Av4cus. Creemos que trabajar en equipo con otros proveedores nos permite innovar y encontrar soluciones más eficientes y efectivas."
             />
           </CardStyle>
         </ContainerCards>
@@ -187,7 +187,7 @@ const About = () => {
           >
             <Meta
               title="Innovación"
-              description="AV4CUS se compromete a ofrecer soluciones SaaS (Software As A Service) innovadoras que ayuden a las empresas a transformarse digitalmente y mejorar su eficiencia."
+              description="Nos comprometemos a ofrecer soluciones de servicios de software innovadoras que ayuden a las empresas a transformarse digitalmente y mejorar su eficiencia."
             />
           </CardStyle>
           <CardStyle
@@ -196,7 +196,7 @@ const About = () => {
           >
             <Meta
               title="Compromiso"
-              description="En Av4cus, creemos en el compromiso con nuestros clientes. Nos esforzamos por comprender sus necesidades y brindar soluciones innovadoras y efectivas que les ayuden a lograr sus objetivos empresariales."
+              description="Creemos en el compromiso con nuestros clientes. Nos esforzamos por comprender sus necesidades y brindar soluciones innovadoras y efectivas que les ayuden a lograr sus objetivos empresariales."
             />
           </CardStyle>
           <CardStyle
@@ -207,7 +207,7 @@ const About = () => {
           >
             <Meta
               title="Humildad"
-              description="La humildad es uno de los valores fundamentales de Av4cus. Reconocemos que siempre hay espacio para mejorar y que debemos aprender de nuestros errorres para seguir creciendo como empresas."
+              description="La humildad es uno de los valores fundamentales de Av4cus. Reconocemos que siempre hay espacio para mejorar y que debemos aprender de nuestros errorres para seguir creciendo como empresa."
             />
           </CardStyle>
           <CardStyle
