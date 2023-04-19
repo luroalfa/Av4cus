@@ -11,7 +11,7 @@ const NotFount = () => {
         <title>AV4CUS-Not Fount</title>
       </Helmet>
       <Header />
-      <Video src={UrlVdeo} autoPlay width={"100%"}>
+      <Video src={UrlVdeo} controls autoPlay width={"100%"}>
         <source src={UrlVdeo} type="video/mp4" />
       </Video>
     </>
