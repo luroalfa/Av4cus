@@ -170,15 +170,12 @@ const About = () => {
         <ImageIcon src={Strategy} alt="Imagen sobre estrategia" />
         <Subtitle>VALORES</Subtitle>
         <Text>
-          Nos esforzamos por ofrecer soluciones que ayuden a las empresas a
-          optimizar sus procesos y mejorar su productividad. Para lograr esto,
-          seguimos una estrategia centrada en la investigación y el desarrollo,
-          la expansión geográfica, el fortalecimiento de la marca y la
-          colaboración con otros proveedores. Estas iniciativas son clave para
-          lograr nuestra visión de ser el proveedor líder en soluciones SaaS
-          innovadoras y para cumplir nuestra misión de proporcionar a las
-          empresas soluciones de alta calidad que les permitan transformarse
-          digitalmente y mejorar sus resultados.
+          En Av4cus, creemos que nuestros valores fundamentales son la base de
+          nuestro éxito y la clave para mantener una relación sólida y duradera
+          con nuestros clientes y colaboradores. Estos valores, que incluyen la
+          innovación, el compromiso, la humildad y la excelencia en el servicio,
+          nos guían en nuestra misión de ofrecer soluciones de vanguardia y
+          transformar la forma en que las empresas operan en el ámbito digital.
         </Text>
         <ContainerCards>
           <CardStyle
