@@ -9,7 +9,7 @@ import Hermatix from "../../assets/logos/hermatix_logo.svg";
 import LGB from "../../assets/logos/LGB.jpg";
 import Liberty from "../../assets/logos/liberty.png";
 import Telyman from "../../assets/logos/telyman.png";
-
+import Map from "../../assets/images/Home/map.svg";
 // Components
 import Container from "../../components/Container/Container";
 import Carousel from "../../components/Carousel/Carousel";
@@ -35,6 +35,7 @@ import {
   BtnT,
   BtnW,
   ContainerBtns,
+  ContainerMap,
 } from "./Style/HomeStyleElements";
 
 // Icons
@@ -141,6 +142,14 @@ const Home = () => {
             </ContainerBtns>
           </Section4>
         </Container>
+      </BgSection>
+      <BgSection bgColor={colors.dark_blue}>
+        <ContainerMap>
+          <Subtitle color={colors.white}>
+            Alcance Internacional de Av4cus
+          </Subtitle>
+          <img src={Map} alt="Mapa de expasión" />
+        </ContainerMap>
       </BgSection>
       <WhatsAppButton />
       <ScrollToTop />

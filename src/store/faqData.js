@@ -13,7 +13,7 @@ const faqData = [
     {
       id: 2,
       question: "¿Cómo puedo adquirir los servicios de Synapse?",
-      answer: "El Cliente puede adquirir los servicios de Synapse de Av4cus mediante una suscripción mensual que se basa en el número de usuarios administrativos y técnicos activos, con un precio de $5 USD por usuario.",
+      answer: "El Cliente puede adquirir los servicios de Synapse de Av4cus mediante una suscripción mensual que se basa en el número de usuarios administrativos y técnicos activos, con un precio de $30 USD por usuario.",
       video: null,
     },
     {

@@ -49,6 +49,21 @@ export const Section1 = styled.section`
   }
 `;
 
+
+export const ContainerMap = styled.section`
+  margin: 25px 100px;
+  display: flex;
+    flex-direction: column;
+  text-align: ${(props) => props.center};
+  ${mediaQueries.md} {
+    margin: 15px 10px;
+    & img {
+      width: 100%;
+    }
+  }
+
+`;
+
 export const Section2 = styled.section`
   display: flex;
   flex-direction: column;
@@ -84,6 +99,7 @@ export const Section4 = styled.section`
   flex-direction: row;
   gap: 2em;
   justify-content: space-between;
+  align-items: center;
   & div {
     width: 50%;
     padding: 15px;
