@@ -4,6 +4,11 @@ import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "../../components/WatsAppButton/WhatsAppButton";
 import { Form, Input, Select, Button, message } from "antd"; // Importar la biblioteca antd y los componentes necesarios
+import MyMap from "../../components/Map/MyMap";
+
+import { ContainerFormMap, ContainerFM } from "./Style/StyleElementsContact";
+import Title from "../../components/Title/Title";
+import Container from "../../components/Container/Container";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -64,52 +69,66 @@ const Contact = () => {
         />
       </Helmet>
       <Header />
-      <Form
-        labelCol={{
-          span: 4,
-        }}
-        wrapperCol={{
-          span: 14,
-        }}
-        layout="horizontal"
-        style={{
-          maxWidth: 600,
-        }}
-        form={form}
-        onFinish={handleSubmit}
-      >
-        <Form.Item name="name" label="Nombre">
-          <Input />
-        </Form.Item>
-        <Form.Item name="lastname" label="Apellido">
-          <Input />
-        </Form.Item>
-        <Form.Item name="email" label="Correo" rules={[{ type: "email" }]}>
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="phone"
-          label="Teléfono:"
-          rules={[
-            {
-              required: true,
-              message: "Por favor, ingrese el número de telefono!",
-            },
-          ]}
-        >
-          <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
-        </Form.Item>
+      <Container>
+        <Title>Contáctanos</Title>
+        <ContainerFormMap>
+          <ContainerFM>
+            <Form
+              labelCol={{
+                span: 4,
+              }}
+              wrapperCol={{
+                span: 14,
+              }}
+              layout="horizontal"
+              style={{
+                maxWidth: 600,
+              }}
+              form={form}
+              onFinish={handleSubmit}
+            >
+              <Form.Item name="name" label="Nombre">
+                <Input />
+              </Form.Item>
+              <Form.Item name="lastname" label="Apellido">
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="email"
+                label="Correo"
+                rules={[{ type: "email" }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="phone"
+                label="Teléfono:"
+                rules={[
+                  {
+                    required: true,
+                    message: "Por favor, ingrese el número de telefono!",
+                  },
+                ]}
+              >
+                <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
+              </Form.Item>
 
-        <Form.Item name="subject" label="Asunto">
-          <Input />
-        </Form.Item>
-        <Form.Item name="content" label="Comentario">
-          <TextArea rows={4} />
-        </Form.Item>
-        <Form.Item wrapperCol={{ offset: 4, span: 10 }}>
-          <Button htmlType="submit">Enviar</Button>
-        </Form.Item>
-      </Form>
+              <Form.Item name="subject" label="Asunto">
+                <Input />
+              </Form.Item>
+              <Form.Item name="content" label="Comentario">
+                <TextArea rows={4} />
+              </Form.Item>
+              <Form.Item wrapperCol={{ offset: 4, span: 10 }}>
+                <Button htmlType="submit">Enviar</Button>
+              </Form.Item>
+            </Form>
+          </ContainerFM>
+          <ContainerFM>
+            <MyMap />
+          </ContainerFM>
+        </ContainerFormMap>
+      </Container>
       <WhatsAppButton />
       <Footer />
     </>
