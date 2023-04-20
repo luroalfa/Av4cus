@@ -3,8 +3,53 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "../../components/WatsAppButton/WhatsAppButton";
+import { Form, Input, Select, Button, message } from "antd"; // Importar la biblioteca antd y los componentes necesarios
+
+const { Option } = Select;
+const { TextArea } = Input;
+
+const prefixSelector = (
+  <Form.Item name="prefix" noStyle>
+    <Select style={{ width: 100 }}>
+      <Option value="506">+506</Option>
+      <Option value="504">+504</Option>
+    </Select>
+  </Form.Item>
+);
 
 const Contact = () => {
+  const [form] = Form.useForm();
+
+  const handleSubmit = async (values) => {
+    console.log("Form data:", values);
+
+    try {
+      const response = await fetch(
+        "https://zkp3c88h9j.execute-api.us-east-1.amazonaws.com/dev/email/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
+
+      if (!response.ok) {
+        console.log(response);
+        throw new Error("Error al enviar el formulario");
+      }
+
+      const data = await response.json();
+      console.log("Respuesta del servidor:", data);
+      form.resetFields();
+      message.success("Formulario enviado exitosamente!");
+    } catch (error) {
+      console.error("Error:", error);
+      message.error("Error al enviar el formulario");
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -19,7 +64,52 @@ const Contact = () => {
         />
       </Helmet>
       <Header />
-      <h1>CONTACT</h1>
+      <Form
+        labelCol={{
+          span: 4,
+        }}
+        wrapperCol={{
+          span: 14,
+        }}
+        layout="horizontal"
+        style={{
+          maxWidth: 600,
+        }}
+        form={form}
+        onFinish={handleSubmit}
+      >
+        <Form.Item name="name" label="Nombre">
+          <Input />
+        </Form.Item>
+        <Form.Item name="lastname" label="Apellido">
+          <Input />
+        </Form.Item>
+        <Form.Item name="email" label="Correo" rules={[{ type: "email" }]}>
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name="phone"
+          label="Teléfono:"
+          rules={[
+            {
+              required: true,
+              message: "Por favor, ingrese el número de telefono!",
+            },
+          ]}
+        >
+          <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
+        </Form.Item>
+
+        <Form.Item name="subject" label="Asunto">
+          <Input />
+        </Form.Item>
+        <Form.Item name="content" label="Comentario">
+          <TextArea rows={4} />
+        </Form.Item>
+        <Form.Item wrapperCol={{ offset: 4, span: 10 }}>
+          <Button htmlType="submit">Enviar</Button>
+        </Form.Item>
+      </Form>
       <WhatsAppButton />
       <Footer />
     </>
