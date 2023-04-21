@@ -6,7 +6,7 @@ export const StyledSubtitle = styled.h2`
   text-align: center;
   font-family: ${fonts.poppins};
   font-weight: ${fontWeight.medium};
-  font-size: ${fontSize.xxLarge};
+  font-size: ${fontSize.xLarge};
   line-height: 72px;
   font-style: normal;
 `;

@@ -3,12 +3,12 @@
   "short_name": "Av4cus",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "/public/icon.svg",
       "sizes": "16x16",
       "type": "image/svg"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#00031F"

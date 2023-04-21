@@ -6,7 +6,7 @@ export const StyledTitle = styled.h1`
   text-align: center;
   font-family: ${fonts.poppins};
   font-weight: ${fontWeight.regular};
-  font-size: ${fontSize.xLarge};
+  font-size: ${fontSize.xxLarge};
   line-height: 54px;
   font-style: normal;
 `;

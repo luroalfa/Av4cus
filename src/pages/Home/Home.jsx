@@ -104,6 +104,20 @@ const Home = () => {
           </Section2>
         </Container>
       </BgSection>
+      <br />
+      <BgSection bgColor={colors.dark_blue}>
+        <Container>
+          <Section4>
+            <Subtitle color={colors.white}>
+              Únete al cambio digital con AV4CUS.
+            </Subtitle>
+            <ContainerBtns>
+              <BtnT>HABLAR CON VENTAS</BtnT>
+              <BtnW>PRUEBA GRATIS</BtnW>
+            </ContainerBtns>
+          </Section4>
+        </Container>
+      </BgSection>
 
       <Container>
         <Section3>
@@ -130,20 +144,7 @@ const Home = () => {
         </Section3>
       </Container>
 
-      <BgSection bgColor={colors.dark_blue}>
-        <Container>
-          <Section4>
-            <Subtitle color={colors.white}>
-              Únete al cambio digital con AV4CUS.
-            </Subtitle>
-            <ContainerBtns>
-              <BtnT>HABLAR CON VENTAS</BtnT>
-              <BtnW>PRUEBA GRATIS</BtnW>
-            </ContainerBtns>
-          </Section4>
-        </Container>
-      </BgSection>
-      <BgSection bgColor={colors.dark_blue}>
+      <BgSection bgColor={colors.dark_gray}>
         <ContainerMap>
           <Subtitle color={colors.white}>
             Alcance Internacional de Av4cus
